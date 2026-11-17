@@ -1,0 +1,74 @@
+/* ===== Variáveis de cor (fácil de trocar depois) ===== */
+:root {
+    --azul-escuro: #12355b;
+    --azul-medio: #1f6fa5;
+    --fundo: #f2f5f9;
+    --borda: #cfd8e3;
+}
+
+body {
+    background-color: var(--fundo);
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #1d2733;
+}
+
+/* ===== Cabeçalho ===== */
+.topo {
+    background-color: var(--azul-escuro);
+    color: #ffffff;
+    padding: 2rem 1rem;
+}
+
+.topo h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* ===== Cada fieldset vira um "bloco" branco ===== */
+.grupo {
+    background-color: #ffffff;
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* O Bootstrap deixa a legend com largura total; aqui deixamos
+   ela como um título com uma linha embaixo */
+.grupo legend {
+    float: none;
+    width: 100%;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--azul-escuro);
+    border-bottom: 2px solid var(--azul-medio);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+/* ===== Botão principal ===== */
+.btn-escola {
+    background-color: var(--azul-medio);
+    border-color: var(--azul-medio);
+    color: #ffffff;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.btn-escola:hover {
+    background-color: var(--azul-escuro);
+    border-color: var(--azul-escuro);
+    color: #ffffff;
+}
+
+/* ===== Rodapé ===== */
+.rodape {
+    color: #5b6b7c;
+}
+
+/* ===== Celular: menos espaço nas laterais ===== */
+@media (max-width: 576px) {
+    .grupo {
+        padding: 1rem;
+    }
+}
